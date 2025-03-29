@@ -9,7 +9,14 @@ import {
   MoonIconFilled,
   DinosaurIconEmpty,
   DinosaurIconFilled,
-  LinkedInIcon
+  LinkedInIcon,
+  DownloadIcon,
+  ProjectIconEmpty,
+  ProjectIconFilled,
+  ResumeIconEmpty,
+  ResumeIconFilled,
+  UniversityIconEmpty,
+  UniversityIconFilled
 } from '../assets/svg/svgIcons'
 
 /**
@@ -36,7 +43,14 @@ const IconLink = ({ iconName, navItem, className = '', onClick, ...iconProps }) 
     'moonFilled': MoonIconFilled,
     'dinosaurEmpty': DinosaurIconEmpty,
     'dinosaurFilled': DinosaurIconFilled,
-    'linkedIn': LinkedInIcon
+    'linkedIn': LinkedInIcon,
+    'download': DownloadIcon,
+    'projectEmpty': ProjectIconEmpty,
+    'projectFilled': ProjectIconFilled,
+    'resumeEmpty': ResumeIconEmpty,
+    'resumeFilled': ResumeIconFilled,
+    'universityEmpty': UniversityIconEmpty,
+    'universityFilled': UniversityIconFilled
   };
   
   // Get the requested icon component

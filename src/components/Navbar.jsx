@@ -6,14 +6,9 @@ import { useTheme } from '../contexts/ThemeContext';
 
 function Navbar() {
     const location = useLocation();
-    const { theme, toggleTheme } = useTheme();
+    const { theme } = useTheme();
     const currentPath = location.pathname;
-
-    // Handle theme toggle without navigating
-    const handleThemeToggle = (e) => {
-        e.preventDefault();
-        toggleTheme();
-    };
+    const isDark = theme === 'dark';
 
     return (
         <nav>
@@ -21,32 +16,41 @@ function Navbar() {
                 <div className='navbar-container'>
                     <div className='title'>
                         Matt Krueger
+                        <div style={{ marginLeft: 'auto', textAlign: 'right' }}>
+                            <div style={{ fontSize: '0.5em', marginTop: '-8px', color: 'var(--color-primary)' }}>Computer Engineer</div>
+                        </div>
                     </div>
                     <div className='navbar-icon-container'>
                         <IconLink 
-                            iconName={theme === 'dark' ? "moonFilled" : "moonEmpty"} 
-                            navItem={["Theme", "#"]} 
-                            width={24} 
-                            height={24}
-                            className={`moon-icon ${theme === 'dark' ? 'selected' : ''}`}
-                            onClick={handleThemeToggle}
-                        />
-                        <IconLink 
-                            iconName={currentPath === "/" ? "homeFilled" : "homeEmpty"} 
+                            iconName={isDark ? "homeFilled" : "homeEmpty"} 
                             navItem={["Home", "/"]} 
                             width={24} 
                             height={24}
                             className={`home-icon ${currentPath === "/" ? 'selected' : ''}`}
                         />
                         <IconLink 
-                            iconName={currentPath === "/projects" ? "dinosaurFilled" : "dinosaurEmpty"} 
+                            iconName={isDark ? "universityFilled" : "universityEmpty"} 
+                            navItem={["University", "/university"]} 
+                            width={24} 
+                            height={24}
+                            className={`university-icon ${currentPath === "/university" ? 'selected' : ''}`}
+                        />
+                        <IconLink 
+                            iconName={isDark ? "projectFilled" : "projectEmpty"} 
                             navItem={["Projects", "/projects"]} 
                             width={24} 
                             height={24}
-                            className={`dinosaur-icon ${currentPath === "/projects" ? 'selected' : ''}`}
+                            className={`project-icon ${currentPath === "/projects" ? 'selected' : ''}`}
                         />
                         <IconLink 
-                            iconName={currentPath === "/contact" ? "phoneFilled" : "phoneEmpty"} 
+                            iconName={isDark ? "resumeFilled" : "resumeEmpty"} 
+                            navItem={["Resume", "/resume"]} 
+                            width={24} 
+                            height={24}
+                            className={`resume-icon ${currentPath === "/resume" ? 'selected' : ''}`}
+                        />
+                        <IconLink 
+                            iconName={isDark ? "phoneFilled" : "phoneEmpty"} 
                             navItem={["Contact", "/contact"]} 
                             width={24} 
                             height={24}

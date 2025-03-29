@@ -86,6 +86,42 @@
   animation: none;
 }
 
+/* Project icon styles (filled & empty) */
+.project-icon {
+  color: var(--icon-color);
+}
+.project-icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+.project-icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
+/* Resume icon styles (filled & empty) */
+.resume-icon {
+  color: var(--icon-color);
+}
+.resume-icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+.resume-icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
+/* University icon styles (filled & empty) */
+.university-icon {
+  color: var(--icon-color);
+}
+.university-icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+.university-icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
 /* hover animation */
 @keyframes hover-animation {
   0% { color: var(--hover1); } 

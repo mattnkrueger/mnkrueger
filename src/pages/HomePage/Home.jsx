@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import '../../assets/css/Markdown.css';
@@ -18,18 +18,29 @@ function HomePage() {
         return response.text();
       })
       .then(text => {
-        const withoutImageSection = text.replace(/<div style.*?<\/div>/s, '');
-        setContent(withoutImageSection);
+        setContent(text);
       })
       .catch(error => {
         console.error('Error loading markdown:', error);
-        setContent('# Content could not be loaded\nPlease check the console for errors.');
+        setContent('# Home content could not be loaded\nPlease check the console for errors.');
       });
   }, []);
 
   return (
     <div className="markdown-content">
-      <h1>About Me</h1>
+      {/* Home header with download link */}
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        borderBottom: '1px solid var(--color-border)',
+        paddingBottom: '0.3em',
+        marginBottom: '20px'
+      }}>
+        <h1 style={{ margin: 0, border: 'none', paddingBottom: 0 }}>Home</h1>
+      </div>
+      
+      {/* Profile images section */}
       <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -39,8 +50,8 @@ function HomePage() {
         margin: '40px 0'
       }}>
         <img 
-          src={johnDeereLogo} 
-          alt="John Deere" 
+          src={iowaHawkeyeLogo} 
+          alt="Iowa Hawkeye" 
           style={{ width: '180px', height: 'auto' }} 
         />
         <img 
@@ -54,12 +65,13 @@ function HomePage() {
           }} 
         />
         <img 
-          src={iowaHawkeyeLogo} 
-          alt="Iowa Hawkeye" 
+          src={johnDeereLogo} 
+          alt="John Deere" 
           style={{ width: '180px', height: 'auto' }} 
         />
       </div>
       
+      {/* Markdown content */}
       <ReactMarkdown rehypePlugins={[rehypeRaw]}>
         {content}
       </ReactMarkdown>
@@ -67,4 +79,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomePage; 

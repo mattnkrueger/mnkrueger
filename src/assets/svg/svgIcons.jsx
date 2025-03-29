@@ -79,3 +79,51 @@ export const LinkedInIcon = ({ width = 24, height = 24, className = '' }) => (
     <path fill="currentColor" d="M22 2V1H2v1H1v20h1v1h20v-1h1V2zm-9 10v8h-3V9h3v1h1V9h4v1h1v10h-3v-8zM4 8V5h3v3zm3 1v11H4V9z"/>
   </svg>
 );
+
+export const DownloadIcon = ({ width = 24, height = 24, className = '' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
+    <path fill="currentColor" d="M5 10H4V8h2v1h1v1h1v1h1v1h1V1h2v12h1v-1h1v-1h1v-1h1V9h1V8h2v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1H9v-1H8v-1H7v-1H6v-1H5zM2 21h20v2H2z"/>
+  </svg>
+);
+
+export const ProjectIconEmpty = ({ width = 24, height = 24, className = '' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
+    <path fill="currentColor" d="M19 11v-1h1V9h1V8h1V7h1V4h-1V3h-1V2h-1V1h-3v1h-1v1h-1v1h-1v1h-1v1h-2V5h-1V4H9V3H8V2H7V1H5v1H4v1H3v1H2v1H1v2h1v1h1v1h1v1h1v1h1v2H5v1H4v1H3v1H2v1H1v6h6v-1h1v-1h1v-1h1v-1h1v-1h2v1h1v1h1v1h1v1h1v1h2v-1h1v-1h1v-1h1v-1h1v-2h-1v-1h-1v-1h-1v-1h-1v-1h-1v-2zM7 10V9H6V8H5V7H4V5h1V4h2v1h1v1H7v1h1v1h1V7h1v2H9v1zm6 3v1h-1v1h-1v1h-1v1H9v1H8v1H7v1H6v1H3v-3h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1V9h1V8h1V7h1v1h1v1h1v1h-1v1h-1v1h-1v1zm6 3v1h1v2h-1v1h-2v-1h-1v-1h-1v-1h-1v-2h1v-1h2v1h-1v1h1v1h1v-1zm-2-9V6h-1V5h1V4h1V3h1v1h1v1h1v1h-1v1h-1v1h-1V7z"/>
+  </svg>
+);
+
+export const ProjectIconFilled = ({ width = 24, height = 24, className = '' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
+    <path fill="currentColor" d="M2 7H1V5h1V4h1V3h1V2h1V1h2v1h1v2H7v1H6v1h1v1h1V6h1V5h2v1h-1v1H9v1H8v1H7v1H6v1H5v-1H4V9H3V8H2zm11 10h-1v1h-1v1h-1v1H9v1H8v1H7v1H1v-6h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1V9h1V8h1V7h1V6h2v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1zM23 4v3h-1v1h-1v1h-2V8h-1V7h-1V6h-1V5h-1V3h1V2h1V1h3v1h1v1h1v1zm-1 13h1v2h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1h-1v-1h-1v-1h-1v-1h1v-1h1v-1h1v-1h1v-1h1v2h-1v1h-1v1h1v1h1v-1h1v-1h2z"/>
+  </svg>
+);
+
+export const ResumeIconEmpty = ({ width = 24, height = 24, className = '' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
+    <path fill="currentColor" d="M19 5V4h-3V3h-1V2h-1V1h-4v1H9v1H8v1H5v1H4v17h1v1h14v-1h1V5zm-9-2h1V2h2v1h1v2h-1v1h-2V5h-1zM6 6h2v1h8V6h2v15H6z"/>
+  </svg>
+);
+
+export const ResumeIconFilled = ({ width = 24, height = 24, className = '' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
+    <path fill="currentColor" d="M15 3V2h-1V1h-4v1H9v1H8v3h1v1h6V6h1V3zm-4 3V5h-1V3h1V2h2v1h1v2h-1v1z"/>
+    <path fill="currentColor" d="M20 5v17h-1v1H5v-1H4V5h1V4h2v3h1v1h8V7h1V4h2v1z"/>
+  </svg>
+);
+export const UniversityIconEmpty = ({ width = 24, height = 24, className = '' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
+    <path 
+      fill="currentColor" 
+      d="M12 1L1 7v2h1v12h1v1h18v-1h1V9h1V7L12 1zm10 8h-1v11H3V9H2V8.6L12 3l10 5.6V9zM5 9v10h2V9H5zm4 0v10h2V9H9zm4 0v10h2V9h-2zm4 0v10h2V9h-2z"
+    />
+  </svg>
+);
+
+export const UniversityIconFilled = ({ width = 24, height = 24, className = '' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
+    <path 
+      fill="currentColor" 
+      d="M12 1L1 7v2h1v12h1v1h18v-1h1V9h1V7L12 1zM7 9v10H5V9h2zm4 0v10H9V9h2zm4 0v10h-2V9h2zm4 0v10h-2V9h2z"
+    />
+  </svg>
+);
