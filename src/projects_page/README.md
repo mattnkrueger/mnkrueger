@@ -1,1 +1,2 @@
-# TODO 
+# Projects
+This page contains personal projects 

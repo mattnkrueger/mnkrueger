@@ -1,7 +1,7 @@
 # Matt Krueger
 ![Me](./src/assets/img/profile_pic.jpeg)
 
-## ☎️ Contact
+## ☎️ Contact Information
 - Phone: +1 (608)797-3815
 - Email: mnkrueger@uiowa.edu
 - LinkedIn: [www.linkedin/in/mattnkrueger](https://www.linkedin.com/in/mattnkrueger/)
