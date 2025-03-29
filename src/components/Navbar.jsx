@@ -9,6 +9,12 @@ function Navbar() {
     const { theme, toggleTheme } = useTheme();
     const currentPath = location.pathname;
 
+    // Handle theme toggle without navigating
+    const handleThemeToggle = (e) => {
+        e.preventDefault();
+        toggleTheme();
+    };
+
     return (
         <nav>
             <div className='navbar'>
@@ -17,16 +23,14 @@ function Navbar() {
                         Matt Krueger
                     </div>
                     <div className='navbar-icon-container'>
-                        <div onClick={toggleTheme} style={{ cursor: 'pointer' }}>
-                            <IconLink 
-                                iconName={theme === 'dark' ? "moonFilled" : "moonEmpty"} 
-                                navItem={["Theme", "#"]} 
-                                width={24} 
-                                height={24}
-                                className={`moon-icon ${theme === 'dark' ? 'selected' : ''}`}
-                                onClick={(e) => e.preventDefault()}
-                            />
-                        </div>
+                        <IconLink 
+                            iconName={theme === 'dark' ? "moonFilled" : "moonEmpty"} 
+                            navItem={["Theme", "#"]} 
+                            width={24} 
+                            height={24}
+                            className={`moon-icon ${theme === 'dark' ? 'selected' : ''}`}
+                            onClick={handleThemeToggle}
+                        />
                         <IconLink 
                             iconName={currentPath === "/" ? "homeFilled" : "homeEmpty"} 
                             navItem={["Home", "/"]} 

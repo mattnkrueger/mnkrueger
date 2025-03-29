@@ -1,11 +1,8 @@
-# Matt Krueger
-![Me](./src/assets/img/profile_pic.jpeg)
-
-## ☎️ Contact Information
-- Phone: +1 (608)797-3815
-- Email: mnkrueger@uiowa.edu
-- LinkedIn: [www.linkedin/in/mattnkrueger](https://www.linkedin.com/in/mattnkrueger/)
-- GitHub: [www.github.com/mattnkrueger](https://www.github.com/mattnkrueger)
+<div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; margin: 40px 0;">
+    <img src="../../assets/img/iowa_hawkeye.png" alt="Iowa Hawkeye" style="width: 180px; height: auto;" />
+    <img src="../../assets/img/profile_pic.jpeg" alt="Profile Picture" style="width: 250px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);" />
+    <img src="../../assets/img/john_deere.png" alt="John Deere" style="width: 180px; height: auto;" />
+</div>
 
 ## 💻 Experience
 ### PART-TIME STUDENT PRODUCT ENGINEER
@@ -26,7 +23,7 @@
 - Collaborated with grant writing professionals in board meetings
 - Presented designs to potential clients
 
-### 🎓 Education
+## 🎓 Education
 **COMPUTER SCIENCE AND ENGINEERING B.S.E.**  
 College of Engineering | University of Iowa, Iowa City, IA (Expected May 2026)
 - GPA: 3.65
@@ -44,6 +41,3 @@ College of Engineering | University of Iowa, Iowa City, IA (Expected May 2026)
 - HTML
 - CSS
 - Verilog
-
-## 📖 Source Code
-[./src/README.md](./src/README.md)

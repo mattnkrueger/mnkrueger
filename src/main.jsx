@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './assets/css/theme.css'
 import './assets/css/index.css'
 import App from './App.jsx'
@@ -9,10 +10,12 @@ import { ThemeProvider } from './contexts/ThemeContext'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider>
-      <Navbar />
-      <App /> 
-      <Footer />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider>
+        <Navbar />
+        <App /> 
+        <Footer />
+      </ThemeProvider>
+    </BrowserRouter>
   </StrictMode>,
 )

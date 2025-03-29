@@ -16,10 +16,12 @@ import {
  * IconLink component that wraps an icon in a hyperlink
  * @param {string} iconName - The name of the icon to display
  * @param {Array} navItem - Navigation item in format ["name", "path"]
- * @param {object} iconProps - Props to pass to the icon (width, height, className)
+ * @param {string} className - CSS class for styling the icon
+ * @param {function} onClick - Click handler function
+ * @param {object} iconProps - Props to pass to the icon (width, height)
  * @returns {JSX.Element} The icon wrapped in a link
  */
-const IconLink = ({ iconName, navItem, ...iconProps }) => {
+const IconLink = ({ iconName, navItem, className = '', onClick, ...iconProps }) => {
   // Extract the path from the navigation item
   const path = navItem[1];
   
@@ -53,8 +55,9 @@ const IconLink = ({ iconName, navItem, ...iconProps }) => {
     <a 
       href={path} 
       {...(isExternalLink ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      onClick={onClick}
     >
-      <IconComponent {...iconProps} />
+      <IconComponent {...iconProps} className={className} />
     </a>
   );
 };
