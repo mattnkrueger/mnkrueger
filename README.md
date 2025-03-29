@@ -1,12 +1,49 @@
-# React + Vite
+# Matt Krueger
+![Me](./src/assets/img/profile_pic.jpeg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ☎️ Contact
+- Phone: +1 (608)797-3815
+- Email: mnkrueger@uiowa.edu
+- LinkedIn: [www.linkedin/in/mattnkrueger](https://www.linkedin.com/in/mattnkrueger/)
+- GitHub: [www.github.com/mattnkrueger](https://www.github.com/mattnkrueger)
 
-Currently, two official plugins are available:
+## 💻 Experience
+### PART-TIME STUDENT PRODUCT ENGINEER
+**John Deere, ISG | Urbandale, IA** (April 2024 - Present)
+- Create stakeholder-facing dashboard applications written in Python
+- Develop embedded robotics pipelines to push product development
+- Collaborate in large team to enhance workflow, learn new frameworks, and employ new techniques
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### PART-TIME STUDENT DEVELOPER
+**FarrPro | Iowa City, IA** (Aug. 2023 - April 2024)
+- Assisted in website development using React JS
+- Coordinated with small team of developers
+- Assisted in LLM training with project specific information
 
-## Expanding the ESLint configuration
+### PROJECT LIAISON INTERN
+**FarrPro | Iowa City, IA** (June 2023 - Aug. 2023)
+- Created website prototypes using Figma to influence project development
+- Collaborated with grant writing professionals in board meetings
+- Presented designs to potential clients
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎓 Education
+**COMPUTER SCIENCE AND ENGINEERING B.S.E.**  
+College of Engineering | University of Iowa, Iowa City, IA (Expected May 2026)
+- GPA: 3.65
+- Dean's List 2022 & 2023
+
+**Ankeny Centennial High School | Ankeny, IA**
+- Cumulative GPA: 4.32
+- National Honor Society
+
+## 💬 Languages
+- Python
+- Java
+- C++
+- JavaScript
+- HTML
+- CSS
+- Verilog
+
+## 📖 Source Code
+[./src/README.md](./src/README.md)
