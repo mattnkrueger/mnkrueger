@@ -1,0 +1,26 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.footer-container div {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .footer-container {
+        justify-content: center;
+    }
+}

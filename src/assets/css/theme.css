@@ -1,0 +1,59 @@
+:root {
+  /* Core palette - Light Theme */
+  --color-primary-light: #646cff;
+  --color-primary-hover-light: #535bf2;
+  --color-background-light: #ffffff;
+  --color-text-light: #213547;
+  --color-text-secondary-light: #666666;
+  --color-border-light: #e0e0e0;
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  
+  /* Core palette - Dark Theme */
+  --color-primary-dark: #747bff;
+  --color-primary-hover-dark: #8388ff;
+  --color-background-dark: #242424;
+  --color-text-dark: rgba(255, 255, 255, 0.87);
+  --color-text-secondary-dark: #a0a0a0;
+  --color-border-dark: #333333;
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  
+  /* Rainbow hover animation colors */
+  --hover1: #FF0000;
+  --hover2: #FF7F00;
+  --hover3: #FFFF00;
+  --hover4: #00FF00;
+  --hover5: #0000FF;
+  --hover6: #4B0082; 
+  --hover7: #9400D3;
+  
+  /* Default active theme (light) */
+  --color-primary: var(--color-primary-light);
+  --color-primary-hover: var(--color-primary-hover-light);
+  --color-background: var(--color-background-light);
+  --color-text: var(--color-text-light);
+  --color-text-secondary: var(--color-text-secondary-light);
+  --color-border: var(--color-border-light);
+  --color-shadow: var(--color-shadow-light);
+  
+  /* Component-specific variables mapped to theme colors */
+  --navbar-bg: var(--color-background);
+  --navbar-shadow: var(--color-shadow);
+  --navbar-title-color: var(--color-text);
+  
+  --icon-color: var(--color-text-secondary);
+  --selected-icon-color: var(--color-text);
+  
+  --footer-bg: var(--color-background);
+  --separator-color: var(--color-border);
+}
+
+/* Create a dark theme class that can be applied to html or body */
+.dark-theme {
+  --color-primary: var(--color-primary-dark);
+  --color-primary-hover: var(--color-primary-hover-dark);
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-text-dark);
+  --color-text-secondary: var(--color-text-secondary-dark);
+  --color-border: var(--color-border-dark);
+  --color-shadow: var(--color-shadow-dark);
+} 

@@ -1,0 +1,99 @@
+:root {
+  --icon-color: #333333;
+  --selected-icon-color: #000000;
+  --icon-hover-duration: 0.7s; 
+  --hover1: #FF0000;
+  --hover2: #FF7F00;
+  --hover3: #FFFF00;
+  --hover4: #00FF00;
+  --hover5: #0000FF;
+  --hover6: #4B0082; 
+  --hover7: #9400D3;
+}
+
+/* Default icon styles */
+.icon {
+  color: var(--icon-color);
+  transition: color 0.1s ease;
+}
+
+.icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+
+.icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
+/* GitHub icon styles */
+.github-icon {
+  color: var(--icon-color);
+}
+.github-icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+.github-icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
+/* Home icon styles (filled & empty) */
+.home-icon {
+  color: var(--icon-color);
+}
+.home-icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+.home-icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
+/* Phone icon styles (filled & empty) */
+.phone-icon {
+  color: var(--icon-color);
+}
+.phone-icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+.phone-icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
+/* Moon icon styles (filled & empty) */
+.moon-icon {
+  color: var(--icon-color);
+}
+.moon-icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+.moon-icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
+/* Dinosaur icon styles (filled & empty) */
+.dinosaur-icon {
+  color: var(--icon-color);
+}
+.dinosaur-icon:hover {
+  animation: hover-animation var(--icon-hover-duration) linear infinite;
+}
+.dinosaur-icon.selected {
+  color: var(--selected-icon-color);
+  animation: none;
+}
+
+/* hover animation */
+@keyframes hover-animation {
+  0% { color: var(--hover1); } 
+  14% { color: var(--hover2); }
+  28% { color: var(--hover3); }
+  42% { color: var(--hover4); }
+  56% { color: var(--hover5); }
+  70% { color: var(--hover6); }
+  85% { color: var(--hover7); } 
+  100% { color: var(--hover1); } 
+}
