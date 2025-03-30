@@ -1,8 +1,9 @@
 {
-  "name": "my-app",
+  "name": "mnkrueger",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mattnkrueger.github.io/mnkrueger",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
