@@ -7,7 +7,6 @@ function Footer() {
     const { theme, toggleTheme } = useTheme();
     const isDark = theme === 'dark';
 
-    // Handle theme toggle without navigating
     const handleThemeToggle = (e) => {
         e.preventDefault();
         toggleTheme();
@@ -24,12 +23,6 @@ function Footer() {
                         height={24} 
                     />
                 </div>
-                <div className="separator" style={{ 
-                    width: '1px', 
-                    height: '24px', 
-                    backgroundColor: 'currentColor', 
-                    opacity: 0.3 
-                }}></div>
                 <div>
                     <IconLink 
                         iconName="linkedIn" 
@@ -38,12 +31,6 @@ function Footer() {
                         height={24} 
                     />
                 </div>
-                <div className="separator" style={{ 
-                    width: '1px', 
-                    height: '24px', 
-                    backgroundColor: 'currentColor', 
-                    opacity: 0.3 
-                }}></div>
                 <div>
                     <IconLink 
                         iconName={isDark ? "moonFilled" : "moonEmpty"} 

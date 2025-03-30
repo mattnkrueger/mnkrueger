@@ -28,6 +28,12 @@ function Navbar() {
                             height={24}
                             className={`home-icon ${currentPath === "/" ? 'selected' : ''}`}
                         />
+                        <div className="separator" style={{ 
+                            width: '1px', 
+                            height: '24px', 
+                            backgroundColor: 'currentColor', 
+                            opacity: 0.3 
+                        }}></div>
                         <IconLink 
                             iconName={isDark ? "universityFilled" : "universityEmpty"} 
                             navItem={["University", "/university"]} 

@@ -50,7 +50,6 @@
   margin: 20px auto;
 }
 
-/* This class will apply to images that have the width attribute specified in markdown */
 .markdown-content .profile-image {
   width: 200px;
   height: auto;
@@ -90,7 +89,6 @@
   margin-bottom: 16px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .markdown-content {
     padding: 0 15px;

@@ -3,13 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Remove or comment out these color scheme definitions 
-     as they're overriding your theme variables */
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: #242424; */
-
-  /* Instead, use your theme variables */
   color: var(--color-text);
   background-color: var(--color-background);
 
@@ -29,7 +22,6 @@ a:hover {
   color: var(--color-primary-hover);
 }
 
-/* For the body and html elements, ensure they use the theme background */
 body, html {
   margin: 0;
   padding: 0;
@@ -61,20 +53,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-/* Keep the rest of your CSS but comment out or remove the media query at the bottom
-   that's using prefers-color-scheme, as it will override your theme */
-/* 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-*/

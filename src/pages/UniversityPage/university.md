@@ -1,6 +1,8 @@
 # University Classes
 Graduation Date: May 2026
 
+Hyperlinks point to GitHub Repositories with class material.
+
 ## Freshman Year
 Semester 1:
 - CHEM:1110 Principles of Chemistry I
