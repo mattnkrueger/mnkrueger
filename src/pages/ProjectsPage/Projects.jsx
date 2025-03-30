@@ -7,7 +7,7 @@ function ProjectsPage() {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch('/src/pages/ProjectsPage/projects.md')
+    fetch('./src/pages/ProjectsPage/projects.md')
       .then(response => {
         if (!response.ok) {
           throw new Error(`Failed to fetch markdown: ${response.status}`);

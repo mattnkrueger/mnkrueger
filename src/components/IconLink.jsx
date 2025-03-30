@@ -32,6 +32,11 @@ const IconLink = ({ iconName, navItem, className = '', onClick, ...iconProps }) 
   // Extract the path from the navigation item
   const path = navItem[1];
   
+  // Add base path for internal links
+  const finalPath = ['github', 'linkedIn'].includes(iconName) ? 
+    path : 
+    `/mnkrueger${path}`;
+  
   // Map icon names to their components
   const iconComponents = {
     'github': GitHubIcon,
@@ -67,7 +72,7 @@ const IconLink = ({ iconName, navItem, className = '', onClick, ...iconProps }) 
   
   return (
     <a 
-      href={path} 
+      href={finalPath} 
       {...(isExternalLink ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       onClick={onClick}
     >

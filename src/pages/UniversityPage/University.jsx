@@ -8,7 +8,7 @@ function UniversityPage() {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch('/src/pages/UniversityPage/university.md')
+    fetch('./src/pages/UniversityPage/university.md')
       .then(response => {
         if (!response.ok) {
           throw new Error(`Failed to fetch markdown: ${response.status}`);

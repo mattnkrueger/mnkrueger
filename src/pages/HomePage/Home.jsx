@@ -52,9 +52,15 @@ function HomePage() {
       {/* Welcome description */}
       <p style={{
         fontSize: '1.1em',
-        textAlign: 'center',
+        textAlign: 'left',
         margin: '20px 0 30px',
-        color: 'var(--color-text)'
+        color: 'var(--color-text)',
+        maxWidth: '800px',
+        width: '100%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+        lineHeight: '1.6'
       }}>
         Welcome to my personal website where I track my progress as a computer engineer!
       </p>
@@ -90,6 +96,35 @@ function HomePage() {
         />
       </div>
       
+      {/* Markdown header for pages section */}
+      <div style={{
+        margin: '20px 0',
+        textAlign: 'left'
+      }}>
+        <h2 style={{
+          fontSize: '2em',
+          fontWeight: '600',
+          borderBottom: '1px solid var(--color-border)',
+          paddingBottom: '0.3em',
+          maxWidth: '800px',
+          margin: '0 auto 15px',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif'
+        }}>
+          Pages
+        </h2>
+        <p style={{
+          fontSize: '1.1em',
+          margin: '0 auto 25px',
+          maxWidth: '800px',
+          color: 'var(--color-text)',
+          textAlign: 'left',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+          lineHeight: '1.6'
+        }}>
+          This website contains four pages that are relevant to my career, use either these cards or navbar icons to navigate
+        </p>
+      </div>
+      
       {/* Card Links section */}
       <div style={{
         display: 'flex',
@@ -100,33 +135,33 @@ function HomePage() {
         margin: '40px 0'
       }}>
         <CardLink 
-          to="/university" 
+          to="/mnkrueger/university" 
           title="University" 
-          description="Explore my academic journey at the University of Iowa, including courses, projects, and achievements."
+          description="List of courses taken at the University of Iowa. Contains links to repos."
           imgSrc={universityImage}
           imgAlt="University of Iowa"
           iconType="university"
         />
         <CardLink 
-          to="/projects" 
+          to="/mnkrueger/projects" 
           title="Projects" 
-          description="View a showcase of my personal and professional development projects across various technologies."
+          description="Personal projects exploring IoT devices."
           imgSrc={projectsImage}
           imgAlt="Projects Showcase"
           iconType="project"
         />
         <CardLink 
-          to="/resume" 
+          to="/mnkrueger/resume" 
           title="Resume" 
-          description="See my professional experience, skills, and qualifications in an easy-to-read format."
+          description="Professional resume and work experiences. Download available."
           imgSrc={resumeImage}
           imgAlt="Resume"
           iconType="resume"
         />
         <CardLink 
-          to="/contact" 
+          to="/mnkrueger/contact" 
           title="Contact" 
-          description="Find ways to connect with me through various channels for networking or opportunities."
+          description="Connect with me!"
           imgSrc={contactImage}
           imgAlt="Contact Information"
           iconType="contact"
@@ -208,14 +243,18 @@ function HomePage() {
           width: '100%',
           margin: '0 auto 20px',
           borderBottom: '1px solid var(--color-border)',
-          paddingBottom: '0.3em'
+          paddingBottom: '0.3em',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif'
         }}>
           Thank You!
         </h2>
         <p style={{ 
           marginBottom: '10px',
           maxWidth: '800px',
-          margin: '0 auto 10px'
+          margin: '0 auto 10px',
+          textAlign: 'left',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+          lineHeight: '1.6'
         }}>
           I hope you enjoy exploring my webpage - feel free to contact me with any inquiries.
         </p>
