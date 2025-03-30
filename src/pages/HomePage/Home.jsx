@@ -14,10 +14,6 @@ import basketballImage from '../../assets/img/basketball.png';
 import pokerImage from '../../assets/img/poker.png';
 import dogsImage from '../../assets/img/dogs.png';
 import hikingImage from '../../assets/img/hiking.png';
-// import universityImage from '../../assets/img/university_card.jpg';
-// import projectsImage from '../../assets/img/projects_card.jpg';
-// import resumeImage from '../../assets/img/resume_card.jpg';
-// import contactImage from '../../assets/img/contact_card.jpg';
 
 function HomePage() {
   const [content, setContent] = useState('');

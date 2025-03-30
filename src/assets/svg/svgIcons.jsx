@@ -7,7 +7,6 @@ export const GitHubIcon = ({ width = 24, height = 24, className = '' }) => (
 );
 export const HomeIconEmpty = ({ width = 24, height = 24, className = '' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
-    {/* Creates an outlined house shape with a door */}
     <path 
       fill="currentColor" 
       d="M22 11v-1h-1V9h-1V8h-1V7h-1V6h-1V5h-1V4h-1V3h-1V2h-1V1h-2v1h-1v1H9v1H8v1H7v1H6v1H5v1H4v1H3v1H2v1H1v1h3v10h1v1h4v-7h6v7h4v-1h1V12h3v-1zm-3 0h-1v10h-1v-6h-1v-1H8v1H7v6H6V11H5v-1h1V9h1V8h1V7h1V6h1V5h1V4h2v1h1v1h1v1h1v1h1v1h1v1h1z"
@@ -16,7 +15,6 @@ export const HomeIconEmpty = ({ width = 24, height = 24, className = '' }) => (
 );
 export const HomeIconFilled = ({ width = 24, height = 24, className = '' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
-    {/* Creates a filled house shape with a door */}
     <path 
       fill="currentColor" 
       d="M23 11v1h-3v10h-1v1h-4v-7H9v7H5v-1H4V12H1v-1h1v-1h1V9h1V8h1V7h1V6h1V5h1V4h1V3h1V2h1V1h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1z"
@@ -26,18 +24,14 @@ export const HomeIconFilled = ({ width = 24, height = 24, className = '' }) => (
 
 export const PhoneIconEmpty = ({ width = 24, height = 24, className = '' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
-    {/* First path creates the phone receiver shape */}
     <path fill="currentColor" d="M12 10h2v2h-2zm6-1h1v3h-2v-2h-1V9h-1V8h-1V7h-2V5h3v1h1v1h1v1h1z"/>
-    {/* Second path creates the main phone body and details */}
     <path fill="currentColor" d="M23 8v4h-2V8h-1V7h-1V6h-1V5h-1V4h-1V3h-4V1h4v1h2v1h1v1h1v1h1v1h1v2zm-1 9v-1h-1v-1h-2v-1h-3v1h-1v1h-3v-1h-1v-1h-1v-1H9v-1H8V9h1V8h1V5H9V3H8V2H7V1H4v1H2v1H1v5h1v4h1v2h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2v1h4v1h5v-1h1v-2h1v-3zm-2 3v1h-4v-1h-4v-1h-2v-1H9v-1H8v-1H7v-1H6v-1H5v-2H4V8H3V4h1V3h3v2h1v3H7v1H6v3h1v1h1v1h1v1h1v1h1v1h1v1h3v-1h1v-1h3v1h2v3z"/>
   </svg>
 );
 
 export const PhoneIconFilled = ({ width = 24, height = 24, className = '' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className}>
-    {/* First path creates the phone receiver shape */}
     <path fill="currentColor" d="M12 7V5h3v1h1v1h1v1h1v1h1v3h-2v-2h-1V9h-1V8h-1V7zm0 3h2v2h-2z"/>
-    {/* Second path creates the main phone body and details */}
     <path fill="currentColor" d="M23 8v4h-2V8h-1V7h-1V6h-1V5h-1V4h-1V3h-4V1h4v1h2v1h1v1h1v1h1v1h1v2zm-1 9h1v3h-1v2h-1v1h-5v-1h-4v-1h-2v-1H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H3v-2H2V8H1V3h1V2h2V1h3v1h1v1h1v2h1v3H9v1H8v3h1v1h1v1h1v1h1v1h3v-1h1v-1h3v1h2v1h1z"/>
   </svg>
 );
